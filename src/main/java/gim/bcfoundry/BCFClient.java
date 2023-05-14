@@ -1,7 +1,10 @@
 package gim.bcfoundry;
 
+import gim.bcfoundry.particle.custom.HKNSlashParticle;
 import net.bettercombat.api.client.BetterCombatClientEvents;
 import net.fabricmc.api.ClientModInitializer;
+import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
+import net.minecraft.client.particle.EndRodParticle;
 
 public class BCFClient implements ClientModInitializer {
     @Override
@@ -12,10 +15,8 @@ public class BCFClient implements ClientModInitializer {
 //
 //        });
 
-        /* Registers our particle client-side.
-         * First argument is our particle's instance, created previously on ExampleMod.
-         * Second argument is the particle's factory. The factory controls how the particle behaves.
-         * In this example, we'll use FlameParticle's Factory. */
+        ParticleFactoryRegistry.getInstance().register(BetterCombatFoundry.HKN_SLASH_PARTICLE, HKNSlashParticle.Factory::new);
+
 
     }
 }
