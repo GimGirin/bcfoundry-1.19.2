@@ -1,5 +1,9 @@
 {
   "item.bcfoundry.hinokami_kagura_nichirin": "Hinokami Kagura Nichirin",
 
-  "itemGroup.bcfoundry.bcf_weapon": "BCF Weapons"
+  "item.bcfoundry.suns_blessing": "Sun's Blessing",
+
+  "itemGroup.bcfoundry.bcf_weapon": "BCF Weapons",
+
+  "itemGroup.bcfoundry.bcf_misc": "BCF Miscellaneous"
 }

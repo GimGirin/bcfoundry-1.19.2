@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "X": {
-      "tag": "bcfoundry:suns_blessing"
+      "item": "bcfoundry:suns_blessing"
     },
     "Y": {
       "item": "minecraft:stick"

@@ -1,5 +1,6 @@
 package gim.bcfoundry;
 
+import gim.bcfoundry.item.BCFItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -13,6 +14,7 @@ public class BetterCombatFoundry implements ModInitializer {
     @Override
     public void onInitialize() {
 
-        LOGGER.info("Hello Fabric world!");
+        BCFItems.registerModItems();
+
     }
 }
