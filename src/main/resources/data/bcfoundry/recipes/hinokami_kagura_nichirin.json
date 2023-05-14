@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "tag": "bcfoundry:suns_blessing"
+    },
+    "Y": {
+      "item": "minecraft:stick"
+    },
+    "Z": {
+      "item": "minecraft:leather"
+    },
+    "H": {
+      "item": "minecraft:iron_sword"
+    },
+    "G": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "XGX",
+    "XHX",
+    "ZYZ"
+  ],
+  "result": {
+    "item": "bcfoundry:hinokami_kagura_nichirin"
+  }
+}
