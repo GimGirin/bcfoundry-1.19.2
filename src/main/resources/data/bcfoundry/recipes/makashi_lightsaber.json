@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "item": "bcfoundry:sith_holocron"
+    },
+    "Y": {
+      "item": "bcfoundry:dooku_holo"
+    },
+    "Z": {
+      "item": "minecraft:iron_ingot"
+    },
+    "O": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "H": {
+      "item": "minecraft:diamond"
+    },
+    "G": {
+      "item": "minecraft:redstone_block"
+    },
+    "M": {
+      "item": "minecraft:redstone"
+    },
+    "Q": {
+      "item": "minecraft:glass"
+    }
+  },
+  "pattern": [
+    "XGY",
+    "MHQ",
+    "ZOZ"
+  ],
+  "result": {
+    "item": "bcfoundry:makashi_lightsaber"
+  }
+}

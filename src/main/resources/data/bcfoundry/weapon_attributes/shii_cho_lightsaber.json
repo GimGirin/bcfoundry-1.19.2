@@ -1,0 +1,60 @@
+{
+  "attributes": {
+    "attack_range": 2.25,
+    "two_handed": true,
+    "pose": "bcfoundry:pose_shii_cho_ready",
+    "category": "lightsaber",
+    "attacks": [
+      {
+        "hitbox": "VERTICAL_PLANE",
+        "damage_multiplier": 0.6,
+        "angle": 0,
+        "upswing": 0.5,
+        "animation": "bcfoundry:shii_cho_hit1",
+        "swing_sound": {
+          "id": "bcfoundry:lightsaber_swing"
+        }
+      },
+      {
+        "hitbox": "VERTICAL_PLANE",
+        "damage_multiplier": 0.8,
+        "angle": 0,
+        "upswing": 0.6,
+        "animation": "bcfoundry:shii_cho_hit3",
+        "swing_sound": {
+          "id": "bcfoundry:lightsaber_swing"
+        }
+      },
+      {
+        "hitbox": "HORIZONTAL_PLANE",
+        "damage_multiplier": 0.6,
+        "angle": 0,
+        "upswing": 0.5,
+        "animation": "bcfoundry:shii_cho_hit4",
+        "swing_sound": {
+          "id": "bcfoundry:lightsaber_swing"
+        }
+      },
+      {
+        "hitbox": "HORIZONTAL_PLANE",
+        "damage_multiplier": 0.6,
+        "angle": 0,
+        "upswing": 0.4,
+        "animation": "bcfoundry:shii_cho_hit6",
+        "swing_sound": {
+          "id": "bcfoundry:lightsaber_swing"
+        }
+      },
+      {
+        "hitbox": "VERTICAL_PLANE",
+        "damage_multiplier": 0.8,
+        "angle": 0,
+        "upswing": 0.6,
+        "animation": "bcfoundry:shii_cho_hit3",
+        "swing_sound": {
+          "id": "bcfoundry:lightsaber_swing"
+        }
+      }
+    ]
+  }
+}

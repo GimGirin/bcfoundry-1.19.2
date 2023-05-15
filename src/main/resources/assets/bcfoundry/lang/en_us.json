@@ -1,8 +1,30 @@
 {
+  "comment": "WEAPONS/IP: DEMON SLAYER",
+
   "item.bcfoundry.hinokami_kagura_nichirin": "Hinokami Kagura Nichirin",
 
+
+  "comment": "WEAPONS/IP: STAR WARS",
+  "item.bcfoundry.shii_cho_lightsaber": "Lightsaber Form 1: Shii-Cho",
+
+  "item.bcfoundry.makashi_lightsaber": "Lightsaber Form 2: Makashi",
+
+
+  "comment": "MISC/IP: DEMON SLAYER",
   "item.bcfoundry.suns_blessing": "Sun's Blessing",
 
+
+  "comment": "MISC/IP: STAR WARS",
+  "item.bcfoundry.kit_fisto_holo": "Imagecaster: Kit Fisto",
+
+  "item.bcfoundry.dooku_holo": "Imagecaster: Count Dooku",
+
+  "item.bcfoundry.jedi_holocron": "Jedi Holocron",
+
+  "item.bcfoundry.sith_holocron": "Sith Holocron",
+
+
+  "comment": "MOD FUNCTIONS",
   "itemGroup.bcfoundry.bcf_weapon": "BCF Weapons",
 
   "itemGroup.bcfoundry.bcf_misc": "BCF Miscellaneous"

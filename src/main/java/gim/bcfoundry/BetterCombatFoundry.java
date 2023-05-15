@@ -20,7 +20,7 @@ public class BetterCombatFoundry implements ModInitializer {
     public void onInitialize() {
 
         BCFItems.registerModItems();
-        BCFParticles.registerModParticles();
+//        BCFParticles.registerModParticles();
 
     }
 }

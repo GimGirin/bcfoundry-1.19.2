@@ -39,7 +39,7 @@
         "hitbox": "HORIZONTAL_PLANE",
         "damage_multiplier": 1,
         "angle": 120,
-        "upswing": 0.7,
+        "upswing": 0.5,
         "animation": "bcfoundry:hinokami_kagura_raging_sun",
         "swing_sound": {
           "id": "bettercombat:katana_slash"
