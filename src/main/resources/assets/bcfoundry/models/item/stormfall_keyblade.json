@@ -1,0 +1,37 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "bcfoundry:item/stormfall",
+		"particle": "bcfoundry:item/stormfall"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [171.25, -72.03, -143.82],
+			"translation": [-2, 11, 1.25],
+			"scale": [2, 2, 1]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [5.87, 69.3, -49.6],
+			"translation": [-0.75, 11.5, 1.5],
+			"scale": [2, 2, 1]
+		},
+		"firstperson_righthand": {
+			"rotation": [6, -70, 60],
+			"translation": [4, 6.75, -8.75],
+			"scale": [2, 2, 1]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-150, 75, 100],
+			"translation": [4, 6.25, -9.25],
+			"scale": [2, 2, 1]
+		},
+		"ground": {
+			"translation": [0, 4.25, 0]
+		},
+		"gui": {
+			"rotation": [-180, 0, -180],
+			"translation": [0, 0.25, 0]
+		}
+	}
+}

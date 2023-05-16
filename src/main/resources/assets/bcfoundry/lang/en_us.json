@@ -1,13 +1,20 @@
 {
   "comment": "WEAPONS/IP: DEMON SLAYER",
-
   "item.bcfoundry.hinokami_kagura_nichirin": "Hinokami Kagura Nichirin",
 
 
   "comment": "WEAPONS/IP: STAR WARS",
   "item.bcfoundry.shii_cho_lightsaber": "Lightsaber Form 1: Shii-Cho",
-
   "item.bcfoundry.makashi_lightsaber": "Lightsaber Form 2: Makashi",
+
+  "comment": "WEAPONS/IP: KINGDOM HEARTS",
+  "item.bcfoundry.kingdom_key": "Kingdom Key",
+  "item.bcfoundry.oathkeeper_keyblade": "Oathkeeper",
+  "item.bcfoundry.oblivion_keyblade": "Oblivion",
+  "item.bcfoundry.masters_defender_keyblade": "Master's Defender",
+  "item.bcfoundry.stormfall_keyblade": "Stormfall",
+  "item.bcfoundry.lost_memory_keyblade": "Lost Memory",
+  "item.bcfoundry.chaos_ripper_keyblade": "Chaos Ripper",
 
 
   "comment": "MISC/IP: DEMON SLAYER",
@@ -16,16 +23,16 @@
 
   "comment": "MISC/IP: STAR WARS",
   "item.bcfoundry.kit_fisto_holo": "Imagecaster: Kit Fisto",
-
   "item.bcfoundry.dooku_holo": "Imagecaster: Count Dooku",
-
   "item.bcfoundry.jedi_holocron": "Jedi Holocron",
-
   "item.bcfoundry.sith_holocron": "Sith Holocron",
+
+
+  "comment": "MISC/IP: KINGDOM HEARTS",
+  "item.bcfoundry.lux": "Lux",
 
 
   "comment": "MOD FUNCTIONS",
   "itemGroup.bcfoundry.bcf_weapon": "BCF Weapons",
-
   "itemGroup.bcfoundry.bcf_misc": "BCF Miscellaneous"
 }

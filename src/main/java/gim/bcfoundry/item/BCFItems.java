@@ -27,12 +27,43 @@ public class BCFItems {
                                  // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
                     new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
 
+    // IP: KINGDOM HEARTS
+    public static final Item KINGDOM_KEY_KEYBLADE = registerItem("kingdom_key_keyblade",
+            new SwordItem(ToolMaterials.NETHERITE, 7, -1.8f,
+                    // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
+                    new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
+    public static final Item OATHKEEPER_KEYBLADE = registerItem("oathkeeper_keyblade",
+            new SwordItem(ToolMaterials.NETHERITE, 7, -1.8f,
+                    // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
+                    new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
+    public static final Item OBLIVION_KEYBLADE = registerItem("oblivion_keyblade",
+            new SwordItem(ToolMaterials.NETHERITE, 7, -1.8f,
+                    // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
+                    new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
+    public static final Item MASTERS_DEFENDER_KEYBLADE = registerItem("masters_defender_keyblade",
+            new SwordItem(ToolMaterials.NETHERITE, 7, -1.8f,
+                    // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
+                    new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
+    public static final Item STORMFALL_KEYBLADE = registerItem("stormfall_keyblade",
+            new SwordItem(ToolMaterials.NETHERITE, 7, -1.8f,
+                    // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
+                    new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
+    public static final Item LOST_MEMORY_KEYBLADE = registerItem("lost_memory_keyblade",
+            new SwordItem(ToolMaterials.NETHERITE, 7, -1.8f,
+                    // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
+                    new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
+    public static final Item CHAOS_RIPPER_KEYBLADE = registerItem("chaos_ripper_keyblade",
+            new SwordItem(ToolMaterials.NETHERITE, 7, -1.8f,
+                    // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
+                    new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
+
+
     // INGREDIENTS
         // IP: DEMON SLAYER
     public static final Item SUNS_BLESSING = registerItem("suns_blessing",
             new Item(new FabricItemSettings().group(BCFGroup.BCF_MISC)));
 
-        // IP: STAR WARS
+    // IP: STAR WARS
     public static final Item SITH_HOLOCRON = registerItem("sith_holocron",
             new Item(new FabricItemSettings().group(BCFGroup.BCF_MISC)));
     public static final Item JEDI_HOLOCRON = registerItem("jedi_holocron",
@@ -41,6 +72,11 @@ public class BCFItems {
             new Item(new FabricItemSettings().group(BCFGroup.BCF_MISC)));
     public static final Item DOOKU_HOLO = registerItem("dooku_holo",
             new Item(new FabricItemSettings().group(BCFGroup.BCF_MISC)));
+
+    // IP: KINGDOM HEARTS
+    public static final Item LUX = registerItem("lux",
+            new Item(new FabricItemSettings().group(BCFGroup.BCF_MISC)));
+
 
 
     private static Item registerItem(String name, Item item) {

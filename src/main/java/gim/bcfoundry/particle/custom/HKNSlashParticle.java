@@ -1,39 +1,60 @@
-//package gim.bcfoundry.particle.custom;
-//
-//import gim.bcfoundry.particle.BCFParticles;
-//import net.fabricmc.api.EnvType;
-//import net.fabricmc.api.Environment;
-//import net.minecraft.client.particle.*;
-//import net.minecraft.client.world.ClientWorld;
-//import net.minecraft.network.PacketByteBuf;
-//import net.minecraft.particle.DefaultParticleType;
-//import net.minecraft.particle.ParticleEffect;
-//import net.minecraft.particle.ParticleType;
-//import net.minecraft.particle.ParticleTypes;
-//
-//public class HKNSlashParticle extends AnimatedParticle {
-//    HKNSlashParticle(ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ, SpriteProvider spriteProvider) {
-//        super(world, x, y, z, spriteProvider, 0.0125F);
-//        this.velocityX = velocityX;
-//        this.velocityY = velocityY;
-//        this.velocityZ = velocityZ;
-//        this.scale *= 0.75F;
-//        this.maxAge = 60 + this.random.nextInt(12);
-//        this.setTargetColor(15916745);
-//        this.setSpriteForAge(spriteProvider);
-//    }
-//
-//    @Environment(EnvType.CLIENT)
-//    public static class Factory implements ParticleFactory<DefaultParticleType> {
-//        private final SpriteProvider spriteProvider;
-//
-//        public Factory(SpriteProvider spriteProvider) {
-//            this.spriteProvider = spriteProvider;
-//        }
-//
-//        public Particle createParticle(DefaultParticleType defaultParticleType, ClientWorld clientWorld, double d, double e, double f, double g, double h, double i) {
-//            return new HKNSlashParticle(clientWorld, d, e, f, g, h, i, this.spriteProvider);
-//        }
-//    }
-//
-//}
+package gim.bcfoundry.particle.custom;
+
+import gim.bcfoundry.particle.BCFParticles;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
+import net.minecraft.client.particle.*;
+import net.minecraft.client.world.ClientWorld;
+import net.minecraft.network.PacketByteBuf;
+import net.minecraft.particle.DefaultParticleType;
+import net.minecraft.particle.ParticleEffect;
+import net.minecraft.particle.ParticleType;
+import net.minecraft.particle.ParticleTypes;
+
+public class HKNSlashParticle extends SpriteBillboardParticle {
+    protected HKNSlashParticle(ClientWorld level, double xCoord, double yCoord, double zCoord,
+                              SpriteProvider spriteSet, double xd, double yd, double zd) {
+        super(level, xCoord, yCoord, zCoord, xd, yd, zd);
+
+        this.velocityMultiplier = 0.6F;
+        this.x = xd;
+        this.y = yd;
+        this.z = zd;
+        this.scale *= 4F;
+        this.maxAge = 20;
+        this.setSpriteForAge(spriteSet);
+
+        this.red = 1f;
+        this.green = 1f;
+        this.blue = 1f;
+    }
+
+    @Override
+    public void tick() {
+        super.tick();
+        fadeOut();
+    }
+
+    private void fadeOut() {
+        this.alpha = (-(1/(float)maxAge) * age + 1);
+    }
+
+    @Override
+    public ParticleTextureSheet getType() {
+        return ParticleTextureSheet.PARTICLE_SHEET_TRANSLUCENT;
+    }
+
+    @Environment(EnvType.CLIENT)
+    public static class Factory implements ParticleFactory<DefaultParticleType> {
+        private final SpriteProvider sprites;
+
+        public Factory(SpriteProvider spriteSet) {
+            this.sprites = spriteSet;
+        }
+
+        public Particle createParticle(DefaultParticleType particleType, ClientWorld level, double x, double y, double z,
+                                       double dx, double dy, double dz) {
+            return new HKNSlashParticle(level, x, y, z, this.sprites, dx, dy, dz);
+        }
+    }
+}

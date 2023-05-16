@@ -1,0 +1,73 @@
+{
+  "attributes": {
+    "attack_range": 2.5,
+    "two_handed": false,
+    "category": "keyblade",
+    "attacks": [
+      {
+        "conditions": ["DUAL_WIELDING_SAME_CATEGORY", "MAIN_HAND_ONLY"],
+        "hitbox": "FORWARD_BOX",
+        "damage_multiplier": 0.8,
+        "angle": 0,
+        "upswing": 1,
+        "animation": "bcfoundry:dual_keyblade_thrust",
+        "swing_sound": {
+          "id": "bettercombat:claymore_stab"
+        }
+      },
+      {
+        "conditions": ["DUAL_WIELDING_SAME_CATEGORY", "MAIN_HAND_ONLY"],
+        "hitbox": "HORIZONTAL_PLANE",
+        "damage_multiplier": 0.8,
+        "angle": 0,
+        "upswing": 0.6,
+        "animation": "bcfoundry:dual_keyblade_cross",
+        "swing_sound": {
+          "id": "bettercombat:claymore_swing"
+        }
+      },
+      {
+        "conditions": ["DUAL_WIELDING_SAME_CATEGORY", "OFF_HAND_ONLY"],
+        "hitbox": "FORWARD_BOX",
+        "damage_multiplier": 0.8,
+        "angle": 0,
+        "upswing": 1,
+        "animation": "bcfoundry:dual_keyblade_thrust",
+        "swing_sound": {
+          "id": "bettercombat:claymore_stab"
+        }
+      },
+      {
+        "conditions": ["DUAL_WIELDING_SAME_CATEGORY", "OFF_HAND_ONLY"],
+        "hitbox": "HORIZONTAL_PLANE",
+        "damage_multiplier": 0.8,
+        "angle": 0,
+        "upswing": 0.6,
+        "animation": "bcfoundry:dual_keyblade_cross",
+        "swing_sound": {
+          "id": "bettercombat:claymore_swing"
+        }
+      },
+      {
+        "hitbox": "FORWARD_BOX",
+        "damage_multiplier": 0.8,
+        "angle": 0,
+        "upswing": 1,
+        "animation": "bcfoundry:dual_keyblade_thrust",
+        "swing_sound": {
+          "id": "bettercombat:claymore_stab"
+        }
+      },
+      {
+        "hitbox": "HORIZONTAL_PLANE",
+        "damage_multiplier": 0.8,
+        "angle": 0,
+        "upswing": 0.6,
+        "animation": "bcfoundry:dual_keyblade_cross",
+        "swing_sound": {
+          "id": "bettercombat:claymore_swing"
+        }
+      }
+    ]
+  }
+}

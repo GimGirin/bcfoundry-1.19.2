@@ -1,6 +1,7 @@
 package gim.bcfoundry;
 
-//import gim.bcfoundry.particle.custom.HKNSlashParticle;
+import gim.bcfoundry.particle.BCFParticles;
+import gim.bcfoundry.particle.custom.HKNSlashParticle;
 import net.bettercombat.api.client.BetterCombatClientEvents;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
@@ -15,7 +16,7 @@ public class BCFClient implements ClientModInitializer {
 //
 //        });
 
-//        ParticleFactoryRegistry.getInstance().register(BetterCombatFoundry.HKN_SLASH_PARTICLE, HKNSlashParticle.Factory::new);
+        ParticleFactoryRegistry.getInstance().register(BCFParticles.HKN_SLASH_PARTICLE, HKNSlashParticle.Factory::new);
 
 
     }
