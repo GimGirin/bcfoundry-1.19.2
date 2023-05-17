@@ -6,24 +6,24 @@
     "attacks": [
       {
         "conditions": ["DUAL_WIELDING_SAME_CATEGORY", "MAIN_HAND_ONLY"],
-        "hitbox": "FORWARD_BOX",
+        "hitbox": "VERTICAL_PLANE",
         "damage_multiplier": 0.8,
         "angle": 0,
-        "upswing": 1,
-        "animation": "bcfoundry:dual_keyblade_thrust",
+        "upswing": 1.5,
+        "animation": "bcfoundry:roxas_dual_overhead_slash",
         "swing_sound": {
-          "id": "bettercombat:claymore_stab"
+          "id": "bettercombat:sword_slash"
         }
       },
       {
-        "conditions": ["DUAL_WIELDING_SAME_CATEGORY", "MAIN_HAND_ONLY"],
-        "hitbox": "HORIZONTAL_PLANE",
+        "conditions": ["DUAL_WIELDING_SAME_CATEGORY", "OFF_HAND_ONLY"],
+        "hitbox": "VERTICAL_PLANE",
         "damage_multiplier": 0.8,
         "angle": 0,
-        "upswing": 0.6,
-        "animation": "bcfoundry:dual_keyblade_cross",
+        "upswing": 1.5,
+        "animation": "bcfoundry:roxas_dual_overhead_slash",
         "swing_sound": {
-          "id": "bettercombat:claymore_swing"
+          "id": "bettercombat:sword_slash"
         }
       },
       {
@@ -31,41 +31,30 @@
         "hitbox": "FORWARD_BOX",
         "damage_multiplier": 0.8,
         "angle": 0,
-        "upswing": 1,
-        "animation": "bcfoundry:dual_keyblade_thrust",
+        "upswing": 1.5,
+        "animation": "bcfoundry:roxas_dual_blocking_lunge",
         "swing_sound": {
-          "id": "bettercombat:claymore_stab"
+          "id": "bettercombat:sword_slash"
         }
       },
       {
-        "conditions": ["DUAL_WIELDING_SAME_CATEGORY", "OFF_HAND_ONLY"],
-        "hitbox": "HORIZONTAL_PLANE",
+        "hitbox": "VERTICAL_PLANE",
         "damage_multiplier": 0.8,
         "angle": 0,
-        "upswing": 0.6,
-        "animation": "bcfoundry:dual_keyblade_cross",
+        "upswing": 1.5,
+        "animation": "bcfoundry:roxas_dual_overhead_slash",
         "swing_sound": {
-          "id": "bettercombat:claymore_swing"
+          "id": "bettercombat:sword_slash"
         }
       },
       {
         "hitbox": "FORWARD_BOX",
         "damage_multiplier": 0.8,
         "angle": 0,
-        "upswing": 1,
-        "animation": "bcfoundry:dual_keyblade_thrust",
+        "upswing": 1.5,
+        "animation": "bcfoundry:roxas_dual_blocking_lunge",
         "swing_sound": {
-          "id": "bettercombat:claymore_stab"
-        }
-      },
-      {
-        "hitbox": "HORIZONTAL_PLANE",
-        "damage_multiplier": 0.8,
-        "angle": 0,
-        "upswing": 0.6,
-        "animation": "bcfoundry:dual_keyblade_cross",
-        "swing_sound": {
-          "id": "bettercombat:claymore_swing"
+          "id": "bettercombat:sword_slash"
         }
       }
     ]

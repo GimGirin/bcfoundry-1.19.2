@@ -29,31 +29,31 @@ public class BCFItems {
 
     // IP: KINGDOM HEARTS
     public static final Item KINGDOM_KEY_KEYBLADE = registerItem("kingdom_key_keyblade",
-            new SwordItem(ToolMaterials.NETHERITE, 7, -1.8f,
+            new SwordItem(ToolMaterials.NETHERITE, 7, -2.8f,
                     // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
                     new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
     public static final Item OATHKEEPER_KEYBLADE = registerItem("oathkeeper_keyblade",
-            new SwordItem(ToolMaterials.NETHERITE, 7, -1.8f,
+            new SwordItem(ToolMaterials.NETHERITE, 7, -2.8f,
                     // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
                     new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
     public static final Item OBLIVION_KEYBLADE = registerItem("oblivion_keyblade",
-            new SwordItem(ToolMaterials.NETHERITE, 7, -1.8f,
+            new SwordItem(ToolMaterials.NETHERITE, 7, -2.8f,
                     // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
                     new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
     public static final Item MASTERS_DEFENDER_KEYBLADE = registerItem("masters_defender_keyblade",
-            new SwordItem(ToolMaterials.NETHERITE, 7, -1.8f,
+            new SwordItem(ToolMaterials.NETHERITE, 7, -2.8f,
                     // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
                     new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
     public static final Item STORMFALL_KEYBLADE = registerItem("stormfall_keyblade",
-            new SwordItem(ToolMaterials.NETHERITE, 7, -1.8f,
+            new SwordItem(ToolMaterials.NETHERITE, 7, -2.8f,
                     // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
                     new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
     public static final Item LOST_MEMORY_KEYBLADE = registerItem("lost_memory_keyblade",
-            new SwordItem(ToolMaterials.NETHERITE, 7, -1.8f,
+            new SwordItem(ToolMaterials.NETHERITE, 7, -2.8f,
                     // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
                     new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
     public static final Item CHAOS_RIPPER_KEYBLADE = registerItem("chaos_ripper_keyblade",
-            new SwordItem(ToolMaterials.NETHERITE, 7, -1.8f,
+            new SwordItem(ToolMaterials.NETHERITE, 7, -2.8f,
                     // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
                     new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
 
