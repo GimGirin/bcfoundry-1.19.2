@@ -1,11 +1,15 @@
 package gim.bcfoundry.item.custom;
 
+import gim.bcfoundry.particle.BCFParticles;
+import net.bettercombat.api.client.BetterCombatClientEvents;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemUsageContext;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.particle.DefaultParticleType;
 import net.minecraft.particle.ParticleTypes;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 import java.util.logging.Level;
@@ -16,15 +20,15 @@ public class HKNItem extends SwordItem {
         super(toolMaterial, attackDamage, attackSpeed, settings);
     }
 
-    @Override
-    public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        return super.postHit(stack, target, attacker);
-    }
-
-    public void spawnFire(ItemStack stack, LivingEntity target, LivingEntity attacker, World level) {
-        if (attacker.isPlayer() && postHit(stack, attacker, target)) {
-            level.addParticle(ParticleTypes.FLAME, attacker.getX(), attacker.getY(), attacker.getZ(), 0.5f, 0.5f, 0.5f);
+    public void spawnHKNParticles(ItemUsageContext pContext, BlockPos positionClicked) {
+        for(int i = 0; i < 360; i++) {
+            if(i % 20 == 0) {
+                pContext.getWorld().addParticle(BCFParticles.HKN_SLASH_PARTICLE,
+                        positionClicked.getX() + 0.5d, positionClicked.getY() + 1, positionClicked.getZ() + 0.5d,
+                        Math.cos(i) * 0.25d, 0.15d, Math.sin(i) * 0.25d);
+            }
         }
     }
+
 
 }
