@@ -1,5 +1,6 @@
 package gim.bcfoundry.item;
 
+import gim.bcfoundry.item.custom.HKNItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import gim.bcfoundry.BetterCombatFoundry;
 import net.minecraft.item.Item;
@@ -13,7 +14,7 @@ public class BCFItems {
     // WEAPONS
         // IP: DEMON SLAYER
     public static final Item HINOKAMI_KAGURA_NICHIRIN = registerItem("hinokami_kagura_nichirin",
-            new SwordItem(ToolMaterials.NETHERITE, 5, -2.6f,
+            new HKNItem(ToolMaterials.NETHERITE, 5, -2.6f,
                                  // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
                     new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
 

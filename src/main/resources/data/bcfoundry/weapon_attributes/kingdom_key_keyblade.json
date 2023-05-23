@@ -1,0 +1,85 @@
+{
+  "attributes": {
+    "attack_range": 3,
+    "two_handed": false,
+    "category": "sora_key",
+    "attacks": [
+      {
+        "conditions": ["NOT_DUAL_WIELDING", "MAIN_HAND_ONLY"],
+        "hitbox": "VERTICAL_PLANE",
+        "damage_multiplier": 0.8,
+        "angle": 0,
+        "upswing": 1.5,
+        "animation": "bcfoundry:oo_single_vertical_slash",
+        "swing_sound": {
+          "id": "bettercombat:sword_slash"
+        }
+      },
+      {
+        "conditions": ["NOT_DUAL_WIELDING", "MAIN_HAND_ONLY"],
+        "hitbox": "VERTICAL_PLANE",
+        "damage_multiplier": 0.8,
+        "angle": 0,
+        "upswing": 1.5,
+        "animation": "bcfoundry:oo_single_vertical_slam",
+        "swing_sound": {
+          "id": "bettercombat:sword_slash"
+        }
+      },
+      {
+        "conditions": ["NOT_DUAL_WIELDING", "MAIN_HAND_ONLY"],
+        "hitbox": "HORIZONTAL_PLANE",
+        "damage_multiplier": 0.8,
+        "angle": 0,
+        "upswing": 1.5,
+        "animation": "bcfoundry:oo_single_lunge_slash",
+        "swing_sound": {
+          "id": "bettercombat:sword_slash"
+        }
+      },
+      {
+        "conditions": ["NOT_DUAL_WIELDING", "MAIN_HAND_ONLY"],
+        "hitbox": "FORWARD_BOX",
+        "damage_multiplier": 0.8,
+        "angle": 0,
+        "upswing": 1.5,
+        "animation": "bcfoundry:oo_single_jump_slam",
+        "swing_sound": {
+          "id": "bettercombat:sword_slash"
+        }
+      },
+      {
+        "conditions": ["NOT_DUAL_WIELDING", "MAIN_HAND_ONLY"],
+        "hitbox": "VERTICAL_PLANE",
+        "damage_multiplier": 0.8,
+        "angle": 0,
+        "upswing": 1.5,
+        "animation": "bcfoundry:oo_single_jump_slash",
+        "swing_sound": {
+          "id": "bettercombat:sword_slash"
+        }
+      },
+      {
+        "conditions": ["NOT_DUAL_WIELDING", "MAIN_HAND_ONLY"],
+        "hitbox": "VERTICAL_PLANE",
+        "damage_multiplier": 0.8,
+        "angle": 0,
+        "upswing": 1.5,
+        "animation": "bcfoundry:oo_single_lunge_thrust",
+        "swing_sound": {
+          "id": "bettercombat:sword_slash"
+        }
+      },
+      {
+        "hitbox": "VERTICAL_PLANE",
+        "damage_multiplier": 0.8,
+        "angle": 0,
+        "upswing": 1.5,
+        "animation": "bcfoundry:oo_single_lunge_thrust",
+        "swing_sound": {
+          "id": "bettercombat:sword_slash"
+        }
+      }
+    ]
+  }
+}

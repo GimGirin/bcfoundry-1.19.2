@@ -20,7 +20,7 @@ public class HKNSlashParticle extends SpriteBillboardParticle {
         this.x = xd;
         this.y = yd;
         this.z = zd;
-        this.scale *= 4F;
+        this.scale *= 10F;
         this.maxAge = 20;
         this.setSpriteForAge(spriteSet);
 
