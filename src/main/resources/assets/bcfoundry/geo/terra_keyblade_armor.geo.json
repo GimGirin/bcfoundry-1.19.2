@@ -1876,12 +1876,12 @@
 				{
 					"name": "bipedRightArm",
 					"parent": "terras_keyblade_armor",
-					"pivot": [-4, 22, 0]
+					"pivot": [-5, 22, 0]
 				},
 				{
 					"name": "armorRightArm",
 					"parent": "bipedRightArm",
-					"pivot": [-4, 22, 0]
+					"pivot": [-5, 22, 0]
 				},
 				{
 					"name": "gold2",
@@ -2247,12 +2247,12 @@
 				{
 					"name": "bipedLeftArm",
 					"parent": "terras_keyblade_armor",
-					"pivot": [4, 22, 0]
+					"pivot": [5, 22, 0]
 				},
 				{
 					"name": "armorLeftArm",
 					"parent": "bipedLeftArm",
-					"pivot": [4, 22, 0]
+					"pivot": [5, 22, 0]
 				},
 				{
 					"name": "gold3",

@@ -29,7 +29,7 @@
       {
         "conditions": ["DUAL_WIELDING_SAME_CATEGORY", "OFF_HAND_ONLY"],
         "hitbox": "VERTICAL_PLANE",
-        "damage_multiplier": 0.8,
+        "damage_multiplier": 1.2,
         "angle": 0,
         "upswing": 1.8,
         "animation": "bcfoundry:roxas_dual_overhead_slam",
@@ -40,7 +40,7 @@
       {
         "conditions": ["DUAL_WIELDING_SAME_CATEGORY", "OFF_HAND_ONLY"],
         "hitbox": "VERTICAL_PLANE",
-        "damage_multiplier": 0.8,
+        "damage_multiplier": 1.2,
         "angle": 0,
         "upswing": 1.5,
         "animation": "bcfoundry:roxas_dual_overhead_slash",
@@ -73,7 +73,7 @@
       {
         "conditions": ["DUAL_WIELDING_SAME_CATEGORY", "MAIN_HAND_ONLY"],
         "hitbox": "VERTICAL_PLANE",
-        "damage_multiplier": 0.8,
+        "damage_multiplier": 1.2,
         "angle": 0,
         "upswing": 1.5,
         "animation": "bcfoundry:sora_down_slam",
@@ -84,7 +84,7 @@
       {
         "conditions": ["DUAL_WIELDING_SAME_CATEGORY", "MAIN_HAND_ONLY"],
         "hitbox": "FORWARD_BOX",
-        "damage_multiplier": 0.8,
+        "damage_multiplier": 1.2,
         "angle": 0,
         "upswing": 1.5,
         "animation": "bcfoundry:sora_lunge_thrust",
@@ -93,9 +93,75 @@
         }
       },
       {
-        "conditions": ["NOT_DUAL_WIELDING", "MAIN_HAND_ONLY"],
-        "hitbox": "VERTICAL_PLANE",
+        "conditions": ["DUAL_WIELDING_ANY", "MAIN_HAND_ONLY"],
+        "hitbox": "FORWARD_BOX",
         "damage_multiplier": 0.8,
+        "angle": 0,
+        "upswing": 1.5,
+        "animation": "bcfoundry:valor_hori_vert_slash",
+        "swing_sound": {
+          "id": "bettercombat:sword_slash"
+        }
+      },
+      {
+        "conditions": ["DUAL_WIELDING_ANY", "OFF_HAND_ONLY"],
+        "hitbox": "FORWARD_BOX",
+        "damage_multiplier": 0.8,
+        "angle": 0,
+        "upswing": 1.5,
+        "animation": "bcfoundry:valor_lunge_slash",
+        "swing_sound": {
+          "id": "bettercombat:sword_slash"
+        }
+      },
+      {
+        "conditions": ["DUAL_WIELDING_ANY", "MAIN_HAND_ONLY"],
+        "hitbox": "HORIZONTAL_PLANE",
+        "damage_multiplier": 0.8,
+        "angle": 0,
+        "upswing": 1.5,
+        "animation": "bcfoundry:valor_horizontal_slash",
+        "swing_sound": {
+          "id": "bettercombat:sword_slash"
+        }
+      },
+      {
+        "conditions": ["DUAL_WIELDING_ANY", "OFF_HAND_ONLY"],
+        "hitbox": "HORIZONTAL_PLANE",
+        "damage_multiplier": 0.8,
+        "angle": 0,
+        "upswing": 1.5,
+        "animation": "bcfoundry:valor_cross_slash",
+        "swing_sound": {
+          "id": "bettercombat:sword_slash"
+        }
+      },
+      {
+        "conditions": ["DUAL_WIELDING_ANY", "MAIN_HAND_ONLY"],
+        "hitbox": "VERTICAL_PLANE",
+        "damage_multiplier": 1.2,
+        "angle": 0,
+        "upswing": 1.8,
+        "animation": "bcfoundry:roxas_dual_overhead_slam",
+        "swing_sound": {
+          "id": "bettercombat:sword_slash"
+        }
+      },
+      {
+        "conditions": ["DUAL_WIELDING_ANY", "OFF_HAND_ONLY"],
+        "hitbox": "FORWARD_BOX",
+        "damage_multiplier": 1.2,
+        "angle": 0,
+        "upswing": 1.5,
+        "animation": "bcfoundry:sora_lunge_thrust",
+        "swing_sound": {
+          "id": "bettercombat:sword_slash"
+        }
+      },
+      {
+        "conditions": ["NOT_DUAL_WIELDING"],
+        "hitbox": "VERTICAL_PLANE",
+        "damage_multiplier": 1,
         "angle": 0,
         "upswing": 1.5,
         "animation": "bcfoundry:oo_single_vertical_slash",
@@ -104,9 +170,9 @@
         }
       },
       {
-        "conditions": ["NOT_DUAL_WIELDING", "MAIN_HAND_ONLY"],
+        "conditions": ["NOT_DUAL_WIELDING"],
         "hitbox": "VERTICAL_PLANE",
-        "damage_multiplier": 0.8,
+        "damage_multiplier": 1,
         "angle": 0,
         "upswing": 1.5,
         "animation": "bcfoundry:oo_single_lunge_slash",
@@ -115,9 +181,9 @@
         }
       },
       {
-        "conditions": ["NOT_DUAL_WIELDING", "MAIN_HAND_ONLY"],
+        "conditions": ["NOT_DUAL_WIELDING"],
         "hitbox": "FORWARD_BOX",
-        "damage_multiplier": 0.8,
+        "damage_multiplier": 1,
         "angle": 0,
         "upswing": 1.5,
         "animation": "bcfoundry:oo_single_jump_slam",
@@ -126,9 +192,9 @@
         }
       },
       {
-        "conditions": ["NOT_DUAL_WIELDING", "MAIN_HAND_ONLY"],
+        "conditions": ["NOT_DUAL_WIELDING"],
         "hitbox": "VERTICAL_PLANE",
-        "damage_multiplier": 0.8,
+        "damage_multiplier": 1,
         "angle": 0,
         "upswing": 1.5,
         "animation": "bcfoundry:oo_single_jump_slash",
@@ -137,9 +203,9 @@
         }
       },
       {
-        "conditions": ["NOT_DUAL_WIELDING", "MAIN_HAND_ONLY"],
+        "conditions": ["NOT_DUAL_WIELDING"],
         "hitbox": "VERTICAL_PLANE",
-        "damage_multiplier": 0.8,
+        "damage_multiplier": 1,
         "angle": 0,
         "upswing": 1.5,
         "animation": "bcfoundry:oo_single_lunge_thrust",
@@ -148,19 +214,9 @@
         }
       },
       {
-        "conditions": ["NOT_DUAL_WIELDING", "MAIN_HAND_ONLY"],
+        "conditions": ["NOT_DUAL_WIELDING"],
         "hitbox": "VERTICAL_PLANE",
-        "damage_multiplier": 0.8,
-        "angle": 0,
-        "upswing": 1.5,
-        "animation": "bcfoundry:oo_single_lunge_thrust",
-        "swing_sound": {
-          "id": "bettercombat:sword_slash"
-        }
-      },
-      {
-        "hitbox": "VERTICAL_PLANE",
-        "damage_multiplier": 0.8,
+        "damage_multiplier": 1,
         "angle": 0,
         "upswing": 1.5,
         "animation": "bcfoundry:oo_single_lunge_thrust",

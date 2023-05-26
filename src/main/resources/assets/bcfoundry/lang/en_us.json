@@ -9,12 +9,29 @@
 
   "comment": "WEAPONS/IP: KINGDOM HEARTS",
   "item.bcfoundry.kingdom_key_keyblade": "Kingdom Key",
+  "item.bcfoundry.fenrir_keyblade": "Fenrir",
+  "item.bcfoundry.shooting_star_keyblade": "Shooting Star",
+  "item.bcfoundry.two_become_one_keyblade": "Two Become One",
+
   "item.bcfoundry.oathkeeper_keyblade": "Oathkeeper",
   "item.bcfoundry.oblivion_keyblade": "Oblivion",
+
   "item.bcfoundry.masters_defender_keyblade": "Master's Defender",
   "item.bcfoundry.stormfall_keyblade": "Stormfall",
+  "item.bcfoundry.brightcrest_keyblade": "Brightcrest",
+
   "item.bcfoundry.lost_memory_keyblade": "Lost Memory",
+  "item.bcfoundry.wayward_wind_keyblade": "Wayward Wind",
+
   "item.bcfoundry.chaos_ripper_keyblade": "Chaos Ripper",
+  "item.bcfoundry.ends_of_the_earth_keyblade": "Ends of the Earth",
+
+
+  "comment": "ARMOR/IP: KINGDOM HEARTS",
+  "item.bcfoundry.terra_keyblade_armor_boots": "Terra's Keyblade Armor Boots",
+  "item.bcfoundry.terra_keyblade_armor_leggings": "Terra's Keyblade Armor Leggings",
+  "item.bcfoundry.terra_keyblade_armor_chestplate": "Terra's Keyblade Armor Chestplate",
+  "item.bcfoundry.terra_keyblade_armor_helmet": "Terra's Keyblade Armor Helmet",
 
 
   "comment": "MISC/IP: DEMON SLAYER",
@@ -34,5 +51,6 @@
 
   "comment": "MOD FUNCTIONS",
   "itemGroup.bcfoundry.bcf_weapon": "BCF Weapons",
+  "itemGroup.bcfoundry.bcf_armor": "BCF Armors",
   "itemGroup.bcfoundry.bcf_misc": "BCF Miscellaneous"
 }

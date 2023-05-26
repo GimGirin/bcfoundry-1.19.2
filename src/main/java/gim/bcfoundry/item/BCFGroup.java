@@ -13,4 +13,7 @@ public class BCFGroup {
     public static final ItemGroup BCF_MISC = FabricItemGroupBuilder.build(
             new Identifier(BetterCombatFoundry.MOD_ID, "bcf_misc"), () -> new ItemStack(BCFItems.SUNS_BLESSING));
 
+    public static final ItemGroup BCF_ARMOR = FabricItemGroupBuilder.build(
+            new Identifier(BetterCombatFoundry.MOD_ID, "bcf_armor"), () -> new ItemStack(BCFItems.TERRA_KEYBLADE_ARMOR_HELMET));
+
 }

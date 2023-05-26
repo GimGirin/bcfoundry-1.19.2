@@ -50,6 +50,9 @@ dependencies {
 	// PLAYER ANIMATOR
 	include modImplementation("dev.kosmx.player-anim:player-animation-lib-fabric:${project.player_anim_version}")
 
+	// GECKOLIB
+	modImplementation "curse.maven:geckolib-388172:${project.geckolib_version}"
+
 
 	// Uncomment the following line to enable the deprecated Fabric API modules. 
 	// These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.
