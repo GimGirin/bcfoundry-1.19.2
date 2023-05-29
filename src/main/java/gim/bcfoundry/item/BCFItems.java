@@ -1,8 +1,22 @@
 package gim.bcfoundry.item;
 
-import gim.bcfoundry.item.custom.HKNItem;
-import gim.bcfoundry.item.custom.keyblade.KingdomKeyKeybladeItem;
-import gim.bcfoundry.item.custom.TerraKeybladeArmorItem;
+import gim.bcfoundry.item.custom.weapons.keyblade.aqua_keys.BrightcrestKeybladeItem;
+import gim.bcfoundry.item.custom.weapons.keyblade.aqua_keys.MastersDefenderKeybladeItem;
+import gim.bcfoundry.item.custom.weapons.keyblade.aqua_keys.StormfallKeybladeItem;
+import gim.bcfoundry.item.custom.weapons.keyblade.okp_obv_keys.OathkeeperKeybladeItem;
+import gim.bcfoundry.item.custom.weapons.keyblade.okp_obv_keys.OblivionKeybladeItem;
+import gim.bcfoundry.item.custom.weapons.keyblade.sora_keys.FenrirKeybladeItem;
+import gim.bcfoundry.item.custom.weapons.keyblade.sora_keys.ShootingStarKeybladeItem;
+import gim.bcfoundry.item.custom.weapons.keyblade.sora_keys.TwoBecomeOneKeybladeItem;
+import gim.bcfoundry.item.custom.weapons.keyblade.terra_keys.ChaosRipperKeybladeItem;
+import gim.bcfoundry.item.custom.weapons.keyblade.terra_keys.EndsOfTheEarthKeybladeItem;
+import gim.bcfoundry.item.custom.weapons.keyblade.ventus_keys.LostMemoryKeybladeItem;
+import gim.bcfoundry.item.custom.weapons.keyblade.ventus_keys.WaywardWindKeybladeItem;
+import gim.bcfoundry.item.custom.weapons.lightsaber.MakashiLightsaberItem;
+import gim.bcfoundry.item.custom.weapons.lightsaber.ShiiChoLightsaberItem;
+import gim.bcfoundry.item.custom.weapons.nichirin.HinokamiKaguraNichirinItem;
+import gim.bcfoundry.item.custom.weapons.keyblade.sora_keys.KingdomKeyKeybladeItem;
+import gim.bcfoundry.item.custom.armor.TerraKeybladeArmorItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import gim.bcfoundry.BetterCombatFoundry;
 import net.minecraft.entity.EquipmentSlot;
@@ -15,17 +29,17 @@ public class BCFItems {
     // WEAPONS
         // IP: DEMON SLAYER
     public static final Item HINOKAMI_KAGURA_NICHIRIN = registerItem("hinokami_kagura_nichirin",
-            new HKNItem(ToolMaterials.NETHERITE, 5, -2.6f,
+            new HinokamiKaguraNichirinItem(ToolMaterials.NETHERITE, 5, -2.6f,
                                  // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
                     new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
 
         // IP: STAR WARS
     public static final Item SHII_CHO_LIGHTSABER = registerItem("shii_cho_lightsaber",
-            new SwordItem(ToolMaterials.NETHERITE, 6, -2f,
+            new ShiiChoLightsaberItem(ToolMaterials.NETHERITE, 6, -2f,
                                  // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
                     new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
     public static final Item MAKASHI_LIGHTSABER = registerItem("makashi_lightsaber",
-            new SwordItem(ToolMaterials.NETHERITE, 6, -1.7f,
+            new MakashiLightsaberItem(ToolMaterials.NETHERITE, 6, -1.7f,
                                  // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
                     new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
 
@@ -36,55 +50,55 @@ public class BCFItems {
                     // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
                     new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
     public static final Item FENRIR_KEYBLADE = registerItem("fenrir_keyblade",
-            new SwordItem(ToolMaterials.NETHERITE, 7, -2.8f,
+            new FenrirKeybladeItem(ToolMaterials.NETHERITE, 7, -2.8f,
                     // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
                     new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
     public static final Item SHOOTING_STAR_KEYBLADE = registerItem("shooting_star_keyblade",
-            new SwordItem(ToolMaterials.NETHERITE, 7, -2.8f,
+            new ShootingStarKeybladeItem(ToolMaterials.NETHERITE, 7, -2.8f,
                     // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
                     new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
     public static final Item TWO_BECOME_ONE_KEYBLADE = registerItem("two_become_one_keyblade",
-            new SwordItem(ToolMaterials.NETHERITE, 7, -2.8f,
+            new TwoBecomeOneKeybladeItem(ToolMaterials.NETHERITE, 7, -2.8f,
                     // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
                     new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
         // OO KEY
     public static final Item OATHKEEPER_KEYBLADE = registerItem("oathkeeper_keyblade",
-            new SwordItem(ToolMaterials.NETHERITE, 7, -2.8f,
+            new OathkeeperKeybladeItem(ToolMaterials.NETHERITE, 7, -2.8f,
                     // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
                     new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
     public static final Item OBLIVION_KEYBLADE = registerItem("oblivion_keyblade",
-            new SwordItem(ToolMaterials.NETHERITE, 7, -2.8f,
+            new OblivionKeybladeItem(ToolMaterials.NETHERITE, 7, -2.8f,
                     // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
                     new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
-        // AQUA KEY
+    // TERRA KEY
+    public static final Item CHAOS_RIPPER_KEYBLADE = registerItem("chaos_ripper_keyblade",
+            new ChaosRipperKeybladeItem(ToolMaterials.NETHERITE, 7, -2.8f,
+                    // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
+                    new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
+    public static final Item ENDS_OF_THE_EARTH_KEYBLADE = registerItem("ends_of_the_earth_keyblade",
+            new EndsOfTheEarthKeybladeItem(ToolMaterials.NETHERITE, 7, -2.8f,
+                    // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
+                    new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
+    // AQUA KEY
     public static final Item MASTERS_DEFENDER_KEYBLADE = registerItem("masters_defender_keyblade",
-            new SwordItem(ToolMaterials.NETHERITE, 7, -2.8f,
+            new MastersDefenderKeybladeItem(ToolMaterials.NETHERITE, 7, -2.8f,
                     // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
                     new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
     public static final Item STORMFALL_KEYBLADE = registerItem("stormfall_keyblade",
-            new SwordItem(ToolMaterials.NETHERITE, 7, -2.8f,
+            new StormfallKeybladeItem(ToolMaterials.NETHERITE, 7, -2.8f,
                     // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
                     new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
     public static final Item BRIGHTCREST_KEYBLADE = registerItem("brightcrest_keyblade",
-            new SwordItem(ToolMaterials.NETHERITE, 7, -2.8f,
+            new BrightcrestKeybladeItem(ToolMaterials.NETHERITE, 7, -2.8f,
                     // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
                     new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
         // VENTUS KEY
     public static final Item LOST_MEMORY_KEYBLADE = registerItem("lost_memory_keyblade",
-            new SwordItem(ToolMaterials.NETHERITE, 7, -2.8f,
+            new LostMemoryKeybladeItem(ToolMaterials.NETHERITE, 7, -2.8f,
                     // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
                     new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
     public static final Item WAYWARD_WIND_KEYBLADE = registerItem("wayward_wind_keyblade",
-            new SwordItem(ToolMaterials.NETHERITE, 7, -2.8f,
-                    // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
-                    new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
-        // TERRA KEY
-    public static final Item CHAOS_RIPPER_KEYBLADE = registerItem("chaos_ripper_keyblade",
-            new SwordItem(ToolMaterials.NETHERITE, 7, -2.8f,
-                    // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
-                    new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
-    public static final Item ENDS_OF_THE_EARTH_KEYBLADE = registerItem("ends_of_the_earth_keyblade",
-            new SwordItem(ToolMaterials.NETHERITE, 7, -2.8f,
+            new WaywardWindKeybladeItem(ToolMaterials.NETHERITE, 7, -2.8f,
                     // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
                     new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
 

@@ -1,4 +1,4 @@
-package gim.bcfoundry.item.custom.keyblade;
+package gim.bcfoundry.item.custom.weapons.keyblade.aqua_keys;
 
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
@@ -12,8 +12,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class KingdomKeyKeybladeItem extends SwordItem {
-    public KingdomKeyKeybladeItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
+public class BrightcrestKeybladeItem extends SwordItem {
+    public BrightcrestKeybladeItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
         super(toolMaterial, attackDamage, attackSpeed, settings);
     }
 
@@ -23,11 +23,11 @@ public class KingdomKeyKeybladeItem extends SwordItem {
             tooltip.add(Text.literal("CREDITS").formatted(Formatting.AQUA));
             tooltip.add(Text.literal( "DEV: GimGirin").formatted(Formatting.AQUA));
             tooltip.add(Text.literal( "MODEL: GimGirin").formatted(Formatting.AQUA));
-            tooltip.add(Text.literal( "SOUNDS: Daedelus").formatted(Formatting.AQUA));
+            tooltip.add(Text.literal( "SOUNDS: Daedelus").formatted(Formatting.RED));
             tooltip.add(Text.literal( "ANIMATIONS: GimGirin").formatted(Formatting.AQUA));
         } else {
             tooltip.add(Text.literal("IP: Kingdom Hearts").formatted(Formatting.GRAY));
-            tooltip.add(Text.literal("Sora's Original Keyblade").formatted(Formatting.GRAY));
+            tooltip.add(Text.literal("Aqua's final personal keyblade").formatted(Formatting.GRAY));
             tooltip.add(Text.literal("Press Shift for more info").formatted(Formatting.YELLOW));
         }
         super.appendTooltip(stack, world, tooltip, context);

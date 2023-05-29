@@ -1,8 +1,6 @@
 package gim.bcfoundry.entity.armor;
 
-import gim.bcfoundry.item.custom.TerraKeybladeArmorItem;
-import software.bernie.example.client.model.armor.GeckoArmorModel;
-import software.bernie.geckolib3.model.AnimatedGeoModel;
+import gim.bcfoundry.item.custom.armor.TerraKeybladeArmorItem;
 import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 
 public class TerraKeybladeArmorRenderer extends GeoArmorRenderer<TerraKeybladeArmorItem> {

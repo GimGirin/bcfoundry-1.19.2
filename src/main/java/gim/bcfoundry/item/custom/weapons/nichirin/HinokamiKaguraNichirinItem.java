@@ -1,27 +1,26 @@
-package gim.bcfoundry.item.custom;
+package gim.bcfoundry.item.custom.weapons.nichirin;
 
 import gim.bcfoundry.BCFClient;
 import gim.bcfoundry.particle.BCFParticles;
-import net.bettercombat.api.client.BetterCombatClientEvents;
+import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemUsageContext;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.particle.DefaultParticleType;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.world.ServerWorld;
-import net.minecraft.util.math.BlockPos;
+import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
-import java.util.logging.Level;
 
-public class HKNItem extends SwordItem {
+public class HinokamiKaguraNichirinItem extends SwordItem {
 
-    public HKNItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
+    public HinokamiKaguraNichirinItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
         super(toolMaterial, attackDamage, attackSpeed, settings);
     }
 
@@ -66,6 +65,23 @@ public class HKNItem extends SwordItem {
 
         return super.postHit(stack, target, attacker);
     }
+
+    @Override
+    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+        if ((Screen.hasShiftDown())) {
+            tooltip.add(Text.literal("CREDITS").formatted(Formatting.AQUA));
+            tooltip.add(Text.literal( "DEV: Jack Bagel").formatted(Formatting.YELLOW));
+            tooltip.add(Text.literal( "MODEL: GimGirin").formatted(Formatting.AQUA));
+            tooltip.add(Text.literal( "SOUNDS: Daedelus").formatted(Formatting.RED));
+            tooltip.add(Text.literal( "ANIMATIONS: GimGirin").formatted(Formatting.AQUA));
+        } else {
+            tooltip.add(Text.literal("IP: Demon Slayer").formatted(Formatting.GRAY));
+            tooltip.add(Text.literal("Sun breathing techniques").formatted(Formatting.GRAY));
+            tooltip.add(Text.literal("Press Shift for more info").formatted(Formatting.YELLOW));
+        }
+        super.appendTooltip(stack, world, tooltip, context);
+    }
+
 
 }
 

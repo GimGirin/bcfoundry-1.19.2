@@ -1,7 +1,7 @@
 package gim.bcfoundry.entity.armor;
 
 import gim.bcfoundry.BetterCombatFoundry;
-import gim.bcfoundry.item.custom.TerraKeybladeArmorItem;
+import gim.bcfoundry.item.custom.armor.TerraKeybladeArmorItem;
 import net.minecraft.util.Identifier;
 import software.bernie.geckolib3.model.AnimatedGeoModel;
 

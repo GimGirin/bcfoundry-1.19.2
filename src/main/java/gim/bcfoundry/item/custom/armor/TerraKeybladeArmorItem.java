@@ -1,4 +1,4 @@
-package gim.bcfoundry.item.custom;
+package gim.bcfoundry.item.custom.armor;
 
 import gim.bcfoundry.item.BCFItems;
 import net.minecraft.entity.EquipmentSlot;

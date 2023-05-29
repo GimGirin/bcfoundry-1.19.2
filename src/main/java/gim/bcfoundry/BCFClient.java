@@ -2,18 +2,12 @@ package gim.bcfoundry;
 
 import gim.bcfoundry.entity.armor.TerraKeybladeArmorRenderer;
 import gim.bcfoundry.item.BCFItems;
-import gim.bcfoundry.item.custom.HKNItem;
 import gim.bcfoundry.particle.BCFParticles;
 import gim.bcfoundry.particle.custom.HKNSlashParticle;
 import net.bettercombat.api.ComboState;
 import net.bettercombat.api.client.BetterCombatClientEvents;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
-import net.minecraft.client.particle.EndRodParticle;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.server.world.ServerWorld;
-import net.minecraft.util.Hand;
 import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 
 public class BCFClient implements ClientModInitializer {
