@@ -3,11 +3,16 @@ package gim.bcfoundry;
 import gim.bcfoundry.entity.armor.TerraKeybladeArmorRenderer;
 import gim.bcfoundry.item.BCFItems;
 import gim.bcfoundry.particle.BCFParticles;
+import gim.bcfoundry.particle.custom.HKNParticle;
 import gim.bcfoundry.particle.custom.HKNSlashParticle;
+import gim.bcfoundry.particle.custom.KNParticle;
 import net.bettercombat.api.ComboState;
 import net.bettercombat.api.client.BetterCombatClientEvents;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
+import net.minecraft.client.particle.Particle;
+import net.minecraft.particle.ParticleType;
+import net.minecraft.particle.ParticleTypes;
 import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 
 public class BCFClient implements ClientModInitializer {
@@ -34,6 +39,9 @@ public class BCFClient implements ClientModInitializer {
                 BCFItems.TERRA_KEYBLADE_ARMOR_HELMET);
 
         ParticleFactoryRegistry.getInstance().register(BCFParticles.HKN_SLASH_PARTICLE, HKNSlashParticle.Factory::new);
+        ParticleFactoryRegistry.getInstance().register(BCFParticles.HKN_PARTICLE, HKNParticle.Factory::new);
+        ParticleFactoryRegistry.getInstance().register(BCFParticles.KN_PARTICLE, KNParticle.Factory::new);
+        ParticleFactoryRegistry.getInstance().register(ParticleTypes.CLOUD, KNParticle.Factory::new);
 
 
     }

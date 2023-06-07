@@ -17,6 +17,7 @@ import gim.bcfoundry.item.custom.weapons.lightsaber.ShiiChoLightsaberItem;
 import gim.bcfoundry.item.custom.weapons.nichirin.HinokamiKaguraNichirinItem;
 import gim.bcfoundry.item.custom.weapons.keyblade.sora_keys.KingdomKeyKeybladeItem;
 import gim.bcfoundry.item.custom.armor.TerraKeybladeArmorItem;
+import gim.bcfoundry.item.custom.weapons.nichirin.KasumiNichirinItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import gim.bcfoundry.BetterCombatFoundry;
 import net.minecraft.entity.EquipmentSlot;
@@ -30,6 +31,10 @@ public class BCFItems {
         // IP: DEMON SLAYER
     public static final Item HINOKAMI_KAGURA_NICHIRIN = registerItem("hinokami_kagura_nichirin",
             new HinokamiKaguraNichirinItem(ToolMaterials.NETHERITE, 5, -2.6f,
+                                 // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
+                    new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
+    public static final Item KASUMI_NICHIRIN = registerItem("kasumi_nichirin",
+            new KasumiNichirinItem(ToolMaterials.NETHERITE, 5, -3.4f,
                                  // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
                     new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
 
@@ -72,11 +77,11 @@ public class BCFItems {
                     new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
     // TERRA KEY
     public static final Item CHAOS_RIPPER_KEYBLADE = registerItem("chaos_ripper_keyblade",
-            new ChaosRipperKeybladeItem(ToolMaterials.NETHERITE, 7, -2.8f,
+            new ChaosRipperKeybladeItem(ToolMaterials.NETHERITE, 7, -2.4f,
                     // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
                     new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
     public static final Item ENDS_OF_THE_EARTH_KEYBLADE = registerItem("ends_of_the_earth_keyblade",
-            new EndsOfTheEarthKeybladeItem(ToolMaterials.NETHERITE, 7, -2.8f,
+            new EndsOfTheEarthKeybladeItem(ToolMaterials.NETHERITE, 7, -2.4f,
                     // tool tier, // #+4 = weapon dmg, // #+4 = atk spd
                     new FabricItemSettings().group(BCFGroup.BCF_WEAPON).maxCount(1)));
     // AQUA KEY

@@ -1,0 +1,50 @@
+{
+  "attributes": {
+    "attack_range": 2.75,
+    "two_handed": true,
+    "pose": "bettercombat:pose_two_handed_sword",
+    "category": "nichirin",
+    "attacks": [
+      {
+        "hitbox": "FORWARD_BOX",
+        "damage_multiplier": 0.6,
+        "angle": 0,
+        "upswing": 1,
+        "animation": "bcfoundry:kasumi_shifting_flow_slash",
+        "swing_sound": {
+          "id": "bettercombat:rapier_stab-01"
+        }
+      },
+      {
+        "hitbox": "FORWARD_BOX",
+        "damage_multiplier": 0.6,
+        "angle": 0,
+        "upswing": 1,
+        "animation": "bcfoundry:kasumi_shifting_flow_slash",
+        "swing_sound": {
+          "id": "bettercombat:rapier_stab-01"
+        }
+      },
+      {
+        "hitbox": "FORWARD_BOX",
+        "damage_multiplier": 0.6,
+        "angle": 0,
+        "upswing": 1,
+        "animation": "bcfoundry:kasumi_shifting_flow_slash",
+        "swing_sound": {
+          "id": "bettercombat:rapier_stab-01"
+        }
+      },
+      {
+        "hitbox": "FORWARD_BOX",
+        "damage_multiplier": 0.6,
+        "angle": 0,
+        "upswing": 1,
+        "animation": "bcfoundry:kasumi_shifting_flow_slash",
+        "swing_sound": {
+          "id": "bettercombat:rapier_stab-01"
+        }
+      }
+    ]
+  }
+}
