@@ -13,7 +13,7 @@ public class KNParticle extends SpriteBillboardParticle {
 
     KNParticle(ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ, SpriteProvider spriteProvider) {
         super(world, x, y, z, 0.0, 0.0, 0.0);
-        this.velocityMultiplier = 0.6F;
+        this.velocityMultiplier = 0.8F;
         this.spriteProvider = spriteProvider;
         float f = 2.5F;
         this.velocityX *= 0.10000000149011612;
@@ -26,7 +26,7 @@ public class KNParticle extends SpriteBillboardParticle {
         this.red = g;
         this.green = g;
         this.blue = g;
-        this.scale *= 1.875F;
+        this.scale *= 2F;
         int i = (int)(8.0 / (Math.random() * 0.8 + 0.3));
         this.maxAge = (int)Math.max((float)i * 2.5F, 1.0F);
         this.collidesWithWorld = false;
